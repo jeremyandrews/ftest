@@ -25,7 +25,7 @@ after my_function: MyStruct { a: 2, b: 4, c: "a different string" }
 ```
 
 This requires the use of a proof-of-concept crate called
-macro_rules_attribute which I'd like to avoid. It also makes
+`macro_rules_attribute` which I'd like to avoid. It also makes
 the declaration of individual task functions a little more
 complicated, though not terrible:
 ```
@@ -42,8 +42,9 @@ seen in the `working_function` example:
 $ cargo run --example working_function
 in my_function: MyStruct { a: 1, b: 2, c: "a string" }
 after my_function: MyStruct { a: 2, b: 4, c: "a different string" }
+```
 
-An working async version that does not include a mutable can
+A working async version that does not include a mutable can
 be seen in the `working_nonmutable` example (see the top of the
 example code for a link to where this came from):
 ```
