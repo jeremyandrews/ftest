@@ -89,3 +89,15 @@ can be seen in the `not_working_future` example:
 
 I've also tried various ways to Pin and/or Box the future, but
 have not managed to get it working.
+
+---
+
+Update (May 22):
+
+Thanks to feedback in https://www.reddit.com/r/rust/comments/goh2be/how_to_store_an_async_future_to_a_function_with_a/ I was able to get this working.
+
+```
+$ cargo run --example working_box
+in my_function: MyStruct { a: 1, b: 2, c: "a string" }
+after my_function: MyStruct { a: 2, b: 4, c: "a different string" }
+```
